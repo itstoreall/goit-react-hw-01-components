@@ -1,8 +1,7 @@
 import React from 'react';
-// import statisticalData from '../statistical-data.json';
 
-const Statistics = ({ title, stats }) => {
-    return <section class="statistics">
+const Statistics = ({ title, stats }) => (
+    <section class="statistics">
         <h2 class="title">{title}</h2>
 
         <ul class="stat-list">
@@ -24,6 +23,6 @@ const Statistics = ({ title, stats }) => {
         </li>
         </ul>
     </section>
-}
+)
 
 export default Statistics;

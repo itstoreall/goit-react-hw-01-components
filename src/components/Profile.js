@@ -1,5 +1,4 @@
 import React from 'react';
-// import user from '../user.json';
 
 const Profile = ({ avatar, alt, name, tag, location, stats }) => (
     <div class="profile">
