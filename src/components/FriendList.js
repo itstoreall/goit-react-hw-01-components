@@ -10,7 +10,7 @@ const FriendList = ({ friends }) => (
                 name={friend.name}
                 isOnline={friend.isOnline}
             />
-        )};
+        )}
     </ul>
 );
 
