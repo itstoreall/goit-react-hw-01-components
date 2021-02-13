@@ -20,11 +20,9 @@ const App = () => {
         title="Upload stats"
         stats={statisticalData}
       />
-      <ul class="friend-list">
-        <FriendList
-          friends={friends}
-        />
-      </ul>
+      <FriendList
+        friends={friends}
+      />
     </div>
   )
 };
