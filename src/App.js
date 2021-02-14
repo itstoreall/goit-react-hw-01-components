@@ -28,6 +28,6 @@ const App = () => (
         items={transactions}
       />
     </div>
-  )
+)
 
 export default App;
