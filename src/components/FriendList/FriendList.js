@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import FriendListItem from './FriendListItem';
 import PropTypes from 'prop-types';
 
@@ -9,7 +9,7 @@ const FriendList = ({ friends }) => (
                 key={friend.id}
                 id={friend.id}
                 avatar={friend.avatar}
-                name={friend.name}
+                name={friend.name123}
                 isOnline={friend.isOnline}
             />
         )}
