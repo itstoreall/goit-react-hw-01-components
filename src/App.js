@@ -10,7 +10,6 @@ import transactions from './transactions.json';
 
 const App = () => (
   <div>
-    <h1>Hi</h1>
       <Profile
         name={name}
         tag={tag}
