@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const StatisticItem = ({ label, percentage }) => (
     <Fragment>
-        <span class="label">{label} </span>
-        <span class="percentage">{percentage}%</span>
+        <span className="statistics-label">{label} </span>
+        <span className="statistics-percentage">{percentage}%</span>
     </Fragment>
 )
 
