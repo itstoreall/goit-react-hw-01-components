@@ -1,22 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StatisticItem from './StatisticItem';
-import './style.css';
+import setColor from './colorsHandler';
+import './Statistics.scss';
 
-const Statistics = ({ title, stats }) => (
+const Statistics = ({ title, stats, colors }) => (
+    
     <section className="statistics">
         {title && title.length > 0
             && <h2 className="statistics-title">{title}</h2>}
         
         <ul className="statistics-stat-list">
-            {stats.map((item) =>
-                <li className="statistics-item" key={item.id}>
+                {stats.map((item) => {
+                
+                    return <li
+                        className="statistics-item"
+                        key={item.id}
+                        style={{backgroundColor: setColor(colors)}}
+                >
                     <StatisticItem
                         key={item.id}
                         label={item.label}
                         percentage={item.percentage}
                     />
                 </li>
+            }
+                
             )}
         </ul>
     </section>
