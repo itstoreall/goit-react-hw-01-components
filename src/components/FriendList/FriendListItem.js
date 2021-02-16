@@ -4,9 +4,9 @@ import defaultImage from '../default.jpg';
 
 const FriendListItem = ({ id, avatar, name, isOnline }) => (
     <li key={id}>
-        <span className="status">{isOnline}</span>
-        <img className="avatar" src={avatar} alt="" width="48" />
-        <p className="name">{name}</p>
+        <span className="friend-status">{isOnline}</span>
+        <img className="friend-avatar" src={avatar} alt="" width="48" />
+        <p className="friend-name">{name}</p>
     </li>
 )
 
