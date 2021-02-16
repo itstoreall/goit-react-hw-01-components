@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import defaultImage from '../default.jpg';
 
 const FriendListItem = ({ id, avatar, name, isOnline }) => (
-    <li key={id}>
+    <li className="item" key={id}>
         <span className="friend-status">{isOnline}</span>
         <img className="friend-avatar" src={avatar} alt="" width="48" />
         <p className="friend-name">{name}</p>
