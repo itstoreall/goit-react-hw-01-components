@@ -17,19 +17,23 @@ const Statistics = ({ title, stats, colors }) => (
                         className="statistics-item"
                         key={item.id}
                         style={{backgroundColor: setColor(colors)}}
-                >
-                    <StatisticItem
-                        key={item.id}
-                        label={item.label}
-                        percentage={item.percentage}
-                    />
-                </li>
-            }
+                    >
+                        <StatisticItem
+                            key={item.id}
+                            label={item.label}
+                            percentage={item.percentage}
+                        />
+                    </li>
+                }
                 
             )}
         </ul>
     </section>
 )
+
+Statistics.defaultProps = {
+  colors: [{color: "#666666"}],
+};
 
 Statistics.propTypes = {
     title: PropTypes.string,
@@ -37,6 +41,9 @@ Statistics.propTypes = {
         id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
         percentage: PropTypes.number.isRequired,
+    colors: PropTypes.arrayOf(PropTypes.shape({
+        color: PropTypes.string,  
+    })),
     })).isRequired,
 };
 
