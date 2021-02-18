@@ -4,10 +4,10 @@ import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import statisticColors from './components/Statistics/statistic-colors';
-import { name, tag, location, avatar, stats } from './user.json';
-import statisticalData from './statistical-data.json';
-import friends from './friends.json';
-import transactions from './transactions.json';
+import { name, tag, location, avatar, stats } from './data/user.json';
+import statisticalData from './data/statistical-data.json';
+import friends from './data/friends.json';
+import transactions from './data/transactions.json';
 
 const App = () => (
   <div>

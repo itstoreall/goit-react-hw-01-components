@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import defaultImage from '../default.jpg';
-import style from './FriendList.module.css';
+import style from './FriendList.module.scss';
 
 const FriendListItem = ({ id, avatar, name, isOnline }) => (
     <li className={style.item} key={id}>

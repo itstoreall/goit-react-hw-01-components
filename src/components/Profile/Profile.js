@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import defaultImage from '../default.jpg';
-import style from './Profile.module.css';
+import style from './Profile.module.scss';
 
 const Profile = ({ name, tag, location, avatar, stats: { followers, views, likes} }) => (
     <div className={style.profile}>
